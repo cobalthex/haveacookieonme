@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaveACookieOnMe", "HaveACookieOnMe\HaveACookieOnMe.csproj", "{47841746-031A-4FC4-9C49-173A1E19BEA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaveACookieOnMe.Tests", "HaveACookieOnMe.Tests\HaveACookieOnMe.Tests.csproj", "{044E91E4-296B-4EAC-8EE9-5C2AA9596DC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A489E4BF-AC84-4F5D-A456-103E2BC2718B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47841746-031A-4FC4-9C49-173A1E19BEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47841746-031A-4FC4-9C49-173A1E19BEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47841746-031A-4FC4-9C49-173A1E19BEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47841746-031A-4FC4-9C49-173A1E19BEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044E91E4-296B-4EAC-8EE9-5C2AA9596DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044E91E4-296B-4EAC-8EE9-5C2AA9596DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044E91E4-296B-4EAC-8EE9-5C2AA9596DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044E91E4-296B-4EAC-8EE9-5C2AA9596DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
