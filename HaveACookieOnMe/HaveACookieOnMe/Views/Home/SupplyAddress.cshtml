@@ -3,10 +3,12 @@
 }
 
 <h1>You have a cookie waiting for you!</h1>
-<img alt='A cookie' src='http://haveacookieon.me'>
+<img alt='A cookie' src='http://haveacookieon.me/Content/Images/Cookies/ChocolateChip.svg'>
 <h2>Enter your address below to have a cookie delivered to your door</h2>
-<form>
+<form style="max-width: 500px; margin: auto;">
     <input type="hidden" name="id" value="@Model">
+    <label for="name">Full Name</label>
+    <input type="text" name="name">
     <label for="address1">Address 1</label>
     <input type="text" name="address1">
     <label for="address2">Address 2</label>
@@ -17,4 +19,5 @@
     <input name="state" type="text">
     <label for="zip">Zip Code</label>
     <input name="zip" type="number">
+    <button>Submit</button>
 </form>

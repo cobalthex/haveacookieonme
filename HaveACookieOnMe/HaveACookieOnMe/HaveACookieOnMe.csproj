@@ -254,6 +254,7 @@
     <Content Include="Content\Scripts\Lib\jquery-1.10.2.min.map" />
     <Content Include="Views\Email\SupplyAddress.cshtml" />
     <Content Include="Views\Home\SupplyAddress.cshtml" />
+    <Content Include="Views\Home\CookieSent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
