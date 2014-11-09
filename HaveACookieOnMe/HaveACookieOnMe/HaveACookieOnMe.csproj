@@ -62,9 +62,6 @@
     <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
     </Reference>
-    <Reference Include="Postal">
-      <HintPath>..\packages\Postal.Mvc5.1.2.0\lib\net45\Postal.dll</HintPath>
-    </Reference>
     <Reference Include="RazorEngine">
       <HintPath>..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
     </Reference>
@@ -189,11 +186,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\RequestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Cookies\ChocolateChip.svg" />
     <Content Include="Content\Images\DeleteCookies.jpg" />
+    <Content Include="Content\Images\Icon.png" />
+    <Content Include="Content\Images\Icon.svg" />
+    <Content Include="Content\Images\Milk.svg" />
+    <Content Include="Content\Images\Paypal.png" />
     <Content Include="Content\Scripts\Func.js" />
     <Content Include="Content\Style\Style.css">
       <DependentUpon>Style.less</DependentUpon>
@@ -233,12 +236,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Content\Scripts\Lib\jquery-1.10.2.min.map" />
-    <Content Include="Views\Emails\Web.config" />
-    <Content Include="Views\Emails\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

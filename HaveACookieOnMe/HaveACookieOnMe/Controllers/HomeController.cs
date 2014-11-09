@@ -14,9 +14,8 @@ namespace HaveACookieOnMe.Controllers
         }
 
         [HttpPost]
-        public ActionResult DoGiveCookie(string Type, string Recipient, string Message, string Charity)
+        public ActionResult DoGiveCookie(Models.RequestModel Request)
         {
-            
 
             return RedirectToAction("Index");
         }
