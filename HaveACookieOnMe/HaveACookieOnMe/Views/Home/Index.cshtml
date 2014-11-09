@@ -1,10 +1,43 @@
 ﻿@{
-    ViewBag.Title = "Have a Cookie on Me";
+    ViewBag.Title = "Have a Cookie, on Me";
 }
 <div id="top">
     <div id="header">
         Have a cookie
         <div class="small splitter">on</div>
         Me
+    </div>
+</div>
+<div id="cookies">
+    <img class="cookie" alt="Chocolate Chip" src="/Content/Images/Cookies/ChocolateChip.svg">
+</div>
+<div id="give-cookie-button" class="button">Give a cookie</div>
+
+<div id="give-panel">
+
+    <div id="gm-close-button">&times;</div>
+    <div id="give-page">
+        <p>
+            <strong>Have a Cookie, on Me</strong> is a simple way for you to give friends and colleagues a small treat while doing good for those less fortunate.
+        </p>
+        <p>
+            <h2 class="splitter">Directions</h2>
+            Below you can send a single cookie to an address or email (We'll get their info) and donate at least half to the charity of your choosing.<br>All it takes is <strong>$1</strong>.
+        </p>
+        <form action="@Url.Action("DoGiveCookie", "Home")" method="post" id="give-form">
+            <label for="type">Cookie Type</label>
+            <select required name="type">
+                <option value="chocochip">Chocolate Chip</option>
+            </select>
+            <label for="recipient">Recipient Email or Address</label>
+            <textarea required name="recipient"></textarea>
+            <label for="message">Personalized Message <span class="hint">(Optional)</span></label>
+            <textarea name="message"></textarea>
+            <label for="charity">Charity</label>
+            <select required name="charity">
+                <option value="Test">Test</option>
+            </select>
+            <button class="paypal-button">Paypal</button>
+        </form>
     </div>
 </div>
