@@ -125,8 +125,6 @@ button:active {
 }
 #give-page {
   width: 600px;
-  margin-top: 15%;
-  margin-left: -20%;
   background: #410;
   border-radius: 20px;
   border-bottom: 20px solid transparent;
@@ -134,6 +132,10 @@ button:active {
   padding: 10px 20px;
   text-shadow: 0 3px 0 rgba(64, 32, 0, 0.4);
   font-size: 120%;
+  overflow-y: auto;
+  position: fixed;
+  left: 10%;
+  bottom: 50px;
 }
 #gm-close-button {
   position: absolute;
@@ -178,6 +180,12 @@ textarea {
   box-sizing: border-box;
   color: #000;
 }
+select::selection,
+input::selection,
+textarea::selection {
+  background: rgba(64, 0, 0, 0.4);
+  color: #fff;
+}
 .paypal-button {
   background-color: #621;
   min-width: 74px;
@@ -195,5 +203,40 @@ form button:active {
 form button:focus {
   outline: none;
   text-shadow: 0 3px 0 rgba(0, 0, 64, 0.4);
+}
+@media (max-width: 1200px) {
+  #give-page {
+    left: 30px;
+  }
+}
+@media (max-height: 800px) {
+  #give-page {
+    top: 50px;
+  }
+  #top {
+    font-size: 80%;
+    padding: 30px auto;
+  }
+}
+@media (orientation: portrait) {
+  .splitter::before,
+  .splitter::after {
+    width: 20px;
+  }
+  #give-page {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+    width: auto;
+  }
+  #give-panel {
+    background: none;
+  }
+  #gm-close-button {
+    top: 10px;
+    right: 10px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */

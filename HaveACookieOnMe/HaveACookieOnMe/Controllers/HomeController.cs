@@ -13,8 +13,14 @@ namespace HaveACookieOnMe.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Address(int Id)
+        {
+            return View("SupplyAddress", Id);
+        }
+
         [HttpPost]
-        public ActionResult DoGiveCookie(Models.RequestModel Request)
+        public ActionResult GiveCookie(Models.RequestModel Request)
         {
 
             return RedirectToAction("Index");

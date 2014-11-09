@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>You have a cookie waiting for you!</h1>
+<img alt='A cookie' src='http://haveacookieon.me'>
+<h2>Enter your address below to have a cookie delivered to your door</h2>
+<form>
+    <input type="hidden" name="id" value="@Model">
+    <label for="address1">Address 1</label>
+    <input type="text" name="address1">
+    <label for="address2">Address 2</label>
+    <input type="text" name="address2">
+    <label for="city">City</label>
+    <input name="city" type="text">
+    <label for="State">State</label>
+    <input name="state" type="text">
+    <label for="zip">Zip Code</label>
+    <input name="zip" type="number">
+</form>
